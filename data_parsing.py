@@ -22,4 +22,6 @@ export_df = games_df[['overall', 'reviewText', 'asin']]
 
 print('Rows exported: {}'.format(len(export_df)))
 
+print('pickling started')
 export_df.to_pickle('games_data.pkl')
+print('pickling done')
